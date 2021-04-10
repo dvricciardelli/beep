@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@color/colorWhite">
+
+    <LinearLayout
+        android:id="@+id/llExerciseView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="visible"
+        tools:visibility="visible">
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/tvWeather"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:textColor="#000000"
+            tools:text="30"/>
+
+        <FrameLayout
+            android:layout_height="100dp"
+            android:layout_width="100dp"
+            android:background="@drawable/item_circular_color_accent_border"
+            android:layout_marginTop="10dp">
+
+            <ProgressBar
+                android:layout_height="100dp"
+                android:layout_width="100dp"
+                android:background="@drawable/circular_progress_grey"
+                android:id="@+id/progressBarExercise"
+                android:rotation="-90"
+                android:progressDrawable="@drawable/circular_progress_bar"
+                android:progress="100"
+                android:max="30"
+                android:indeterminate="false"
+                android:layout_gravity="center"
+                style="?android:attr/progressBarStyleHorizontal"/>
+
+
+            <LinearLayout
+                android:layout_height="60dp"
+                android:layout_width="60dp"
+                android:background="@drawable/item_circular_color_accent_background"
+                android:gravity="center"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/tvBeepTimer"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
+                    android:textColor="#FFFFFF"
+                    tools:text="30"/>
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+</RelativeLayout>
