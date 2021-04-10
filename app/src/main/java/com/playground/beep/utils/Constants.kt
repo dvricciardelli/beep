@@ -9,7 +9,7 @@ object Constants {
 
     const val BASE_URL = "http://api.openweathermap.org/data/"
     const val WEATHER_RESPONSE_DATA = "weather_response_data"
-    const val APP_ID = "36a59f8a27f35bec47b794a7379e3f19"
+    const val APP_ID = ""
     const val METRIC_UNIT = "metric"
     const val PREFERENCE_NAME = "WeatherAppPreference"
 
